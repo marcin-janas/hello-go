@@ -86,3 +86,9 @@ In this presentation, I have tried to collect the most important information abo
 .link https://golang.org/ref/spec#Function_types
 .link https://golang.org/doc/effective_go.html#functions
 .link https://golang.org/doc/faq#Functions_methods
+
+* Defer
+.play src/defer.go
+.link https://golang.org/ref/spec#Defer_statements
+.link https://golang.org/doc/effective_go.html#defer
+.link https://blog.golang.org/defer-panic-and-recover
