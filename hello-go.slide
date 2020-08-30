@@ -1,0 +1,15 @@
+Hello, Go!
+My place to collect information about Go
+
+Marcin Janas
+
+* Hello, Go!
+In this presentation, I have tried to collect the most important information about Go
+
+* Main
+.play src/main.go
+.link https://golang.org/ref/spec#Program_execution
+.link https://golang.org/ref/spec#Bootstrapping
+.link https://golang.org/doc/effective_go.html#package-names
+.link https://tour.golang.org/basics/1
+.link https://golang.org/pkg/builtin/#println
