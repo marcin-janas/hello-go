@@ -80,3 +80,9 @@ In this presentation, I have tried to collect the most important information abo
 .link https://golang.org/ref/spec#For_statements
 .link https://golang.org/doc/effective_go.html#for
 .link https://tour.golang.org/flowcontrol/1
+
+* Function
+.play src/func.go
+.link https://golang.org/ref/spec#Function_types
+.link https://golang.org/doc/effective_go.html#functions
+.link https://golang.org/doc/faq#Functions_methods
