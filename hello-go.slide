@@ -103,3 +103,7 @@ In this presentation, I have tried to collect the most important information abo
 * Log
 .play src/log.go
 .link https://golang.org/pkg/log/
+
+* Flag
+.play src/flag.go
+.link https://golang.org/pkg/flag/
