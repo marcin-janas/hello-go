@@ -13,3 +13,12 @@ In this presentation, I have tried to collect the most important information abo
 .link https://golang.org/doc/effective_go.html#package-names
 .link https://tour.golang.org/basics/1
 .link https://golang.org/pkg/builtin/#println
+
+* Basic types
+- string
+- bool
+- uint, uint8, uint16, uint32, uint64, uintptr, int, int8, int16, int32, int64, byte (alias for uint8), rune (alias for int32), float32, float64 complex64, complex128
+- pointer, function, interface, slice, channel, map
+- array, struct
+.link https://golang.org/ref/spec#Types
+.link https://tour.golang.org/basics/11
