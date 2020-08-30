@@ -99,3 +99,7 @@ In this presentation, I have tried to collect the most important information abo
 .link https://golang.org/doc/effective_go.html#errors
 .link https://golang.org/doc/faq#exceptions
 .link https://blog.golang.org/error-handling-and-go
+
+* Log
+.play src/log.go
+.link https://golang.org/pkg/log/
