@@ -92,3 +92,10 @@ In this presentation, I have tried to collect the most important information abo
 .link https://golang.org/ref/spec#Defer_statements
 .link https://golang.org/doc/effective_go.html#defer
 .link https://blog.golang.org/defer-panic-and-recover
+
+* Error handling
+.play src/error.go
+.link https://golang.org/ref/spec#Errors
+.link https://golang.org/doc/effective_go.html#errors
+.link https://golang.org/doc/faq#exceptions
+.link https://blog.golang.org/error-handling-and-go
