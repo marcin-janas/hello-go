@@ -22,3 +22,12 @@ In this presentation, I have tried to collect the most important information abo
 - array, struct
 .link https://golang.org/ref/spec#Types
 .link https://tour.golang.org/basics/11
+
+* Zero values
+- "" for strings
+- false for booleans
+- 0 for numeric types
+- nil for pointers, functions, interfaces, slices, channels, and maps
+- "each element of an array of structs will have its fields zeroed if no value is specified"
+.link https://golang.org/ref/spec#The_zero_value
+.link https://tour.golang.org/basics/12
