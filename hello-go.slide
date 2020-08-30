@@ -31,3 +31,9 @@ In this presentation, I have tried to collect the most important information abo
 - "each element of an array of structs will have its fields zeroed if no value is specified"
 .link https://golang.org/ref/spec#The_zero_value
 .link https://tour.golang.org/basics/12
+
+* Constants
+.play src/constants.go
+.link https://golang.org/ref/spec#Constants
+.link https://golang.org/ref/spec#Iota
+.link https://golang.org/doc/effective_go.html#constants
