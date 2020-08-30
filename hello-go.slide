@@ -107,3 +107,7 @@ In this presentation, I have tried to collect the most important information abo
 * Flag
 .play src/flag.go
 .link https://golang.org/pkg/flag/
+
+* Exec
+.play src/exec.go
+.link https://golang.org/pkg/os/exec/
