@@ -59,3 +59,8 @@ In this presentation, I have tried to collect the most important information abo
 .play src/blank.go
 .link https://golang.org/ref/spec#Blank_identifier
 .link https://golang.org/doc/effective_go.html#blank
+
+* Unused
+.play src/unused.go
+.link https://golang.org/doc/effective_go.html#blank_unused
+.link https://golang.org/doc/faq#unused_variables_and_imports
