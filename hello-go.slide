@@ -42,3 +42,10 @@ In this presentation, I have tried to collect the most important information abo
 .play src/variables.go
 .link https://golang.org/ref/spec#Variables
 .link https://golang.org/doc/effective_go.html#variables
+
+* Import
+.play src/import.go
+.link https://golang.org/doc/effective_go.html#package-names
+.link https://tour.golang.org/basics/2
+.link https://golang.org/pkg/fmt/#Println
+.link https://golang.org/pkg/log/#Println
