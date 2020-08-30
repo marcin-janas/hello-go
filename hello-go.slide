@@ -37,3 +37,8 @@ In this presentation, I have tried to collect the most important information abo
 .link https://golang.org/ref/spec#Constants
 .link https://golang.org/ref/spec#Iota
 .link https://golang.org/doc/effective_go.html#constants
+
+* Variables
+.play src/variables.go
+.link https://golang.org/ref/spec#Variables
+.link https://golang.org/doc/effective_go.html#variables
