@@ -64,3 +64,11 @@ In this presentation, I have tried to collect the most important information abo
 .play src/unused.go
 .link https://golang.org/doc/effective_go.html#blank_unused
 .link https://golang.org/doc/faq#unused_variables_and_imports
+
+* If
+"A language needs only one conditional control flow construct"
+
+.play src/if.go
+.link https://golang.org/ref/spec#If_statements
+.link https://golang.org/doc/effective_go.html#if
+.link https://golang.org/doc/faq#Does_Go_have_a_ternary_form
