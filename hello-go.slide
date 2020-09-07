@@ -14,6 +14,21 @@ In this presentation, I have tried to collect the most important information abo
 .link https://tour.golang.org/basics/1
 .link https://golang.org/pkg/builtin/#println
 
+* Keywords
+Go only has **25* keywords!
+
+    break, case, chan, const, continue,
+    default, defer, else, fallthrough, for,
+    func, go, goto, if, import,
+    interface, map, package, range, return,
+    select, struct, switch, type, var
+
+"Syntax is clean and light on keywords"
+
+.link https://golang.org/ref/spec#Keywords
+.link https://github.com/golang/go/blob/master/src/go/token/token.go#L97
+.link https://golang.org/doc/faq#principles
+
 * Basic types
 - string
 - bool
