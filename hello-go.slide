@@ -29,6 +29,16 @@ Go only has **25* keywords!
 .link https://github.com/golang/go/blob/master/src/go/token/token.go#L97
 .link https://golang.org/doc/faq#principles
 
+* Built-in functions
+There is no guarantee that the **print* and **println* functions will stay in the language!
+
+    append, cap, close, complex, copy,
+    delete, imag, len, make, new,
+    panic, print, println, real, recover
+
+.link https://golang.org/ref/spec#Built-in_functions
+.link https://golang.org/pkg/builtin/
+
 * Basic types
 - string
 - bool
