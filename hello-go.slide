@@ -142,3 +142,10 @@ There is no guarantee that the **print* and **println* functions will stay in th
 .code -edit src/json.go /START OMIT/,/END OMIT/
 
 .link https://golang.org/pkg/encoding/json/
+
+* HTTP
+.code -edit src/http1.go /START OMIT/,/END OMIT/
+.code -edit src/http2.go /START OMIT/,/END OMIT/
+
+.link https://golang.org/pkg/net/http/
+.link https://golang.org/doc/effective_go.html#web_server
