@@ -136,3 +136,9 @@ There is no guarantee that the **print* and **println* functions will stay in th
 * Exec
 .play src/exec.go
 .link https://golang.org/pkg/os/exec/
+
+* JSON
+.code src/json.json
+.code -edit src/json.go /START OMIT/,/END OMIT/
+
+.link https://golang.org/pkg/encoding/json/
