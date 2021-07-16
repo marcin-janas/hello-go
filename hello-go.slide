@@ -205,3 +205,10 @@ https://tour.golang.org/moretypes/5
 
 .link https://dave.cheney.net/2014/08/17/go-has-both-make-and-new-functions-what-gives
 
+* Channels
+.play src/chan1.go
+.link https://golang.org/ref/spec#Channel_types
+.link https://golang.org/doc/effective_go.html#channels
+.link https://tour.golang.org/concurrency/2
+.link https://www.youtube.com/watch?v=t9bEg2A4jsw
+.link https://www.youtube.com/watch?v=B64hIRjNvLc
