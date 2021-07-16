@@ -3,10 +3,10 @@ package main
 import "fmt"
 
 type Test struct {
-	test *string
+	test string
 }
 
 func main() {
-	test := Test{}
-	fmt.Println(*test.test)
+	test := Test{"test"}
+	fmt.Println(test.test)
 }
