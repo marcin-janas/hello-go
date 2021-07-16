@@ -176,3 +176,7 @@ Files whose names begin with "_" (including "_test.go") or "." are ignored.
 
 * Dependencies
 .link https://research.swtch.com/deps
+
+* Strings
+.link https://golang.org/pkg/strings/
+.link https://yourbasic.org/golang/build-append-concatenate-strings-efficiently/
