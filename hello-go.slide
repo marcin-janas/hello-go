@@ -118,6 +118,11 @@ There is no guarantee that the **print* and **println* functions will stay in th
 .link https://golang.org/doc/effective_go.html#defer
 .link https://blog.golang.org/defer-panic-and-recover
 
+* Recover
+.play src/recover.go
+.link https://golang.org/doc/effective_go#recover
+.link https://medium.com/a-journey-with-go/go-how-does-a-program-recover-fbbbf27cc31e
+
 * Error handling
 .play src/error.go
 .link https://golang.org/ref/spec#Errors
