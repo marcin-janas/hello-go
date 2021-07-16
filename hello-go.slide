@@ -128,6 +128,8 @@ There is no guarantee that the **print* and **println* functions will stay in th
 * Log
 .play src/log.go
 .link https://golang.org/pkg/log/
+.link https://dave.cheney.net/2015/11/05/lets-talk-about-logging
+.link https://dave.cheney.net/2017/01/23/the-package-level-logger-anti-pattern
 
 * Flag
 .play src/flag.go
