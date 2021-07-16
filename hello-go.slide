@@ -232,3 +232,10 @@ https://tour.golang.org/moretypes/5
 .link https://blog.golang.org/waza-talk
 .link https://blog.golang.org/pipelines
 .link https://www.youtube.com/watch?v=YEKjSzIwAdA
+
+* Goroutines
+.link https://golang.org/ref/spec#Go_statements
+.link https://golang.org/doc/effective_go.html#goroutines
+.link https://golang.org/doc/faq#goroutines
+.link https://golang.org/doc/faq#no_goroutine_id
+.link https://golang.org/doc/faq#closures_and_goroutines
