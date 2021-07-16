@@ -219,3 +219,6 @@ https://tour.golang.org/moretypes/5
 .link https://dave.cheney.net/2019/01/08/avoid-package-names-like-base-util-or-common
 .link https://www.youtube.com/watch?v=GXijarXgHHY
 
+* Internal Directories
+.link https://golang.org/cmd/go/#hdr-Internal_Directories
+
