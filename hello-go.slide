@@ -193,3 +193,15 @@ Files whose names begin with "_" (including "_test.go") or "." are ignored.
 https://golang.org/ref/spec#Struct_types
 .link https://dave.cheney.net/2014/03/25/the-empty-struct
 https://tour.golang.org/moretypes/5
+
+* Make & New
+- new:
+.link https://golang.org/ref/spec#Allocation
+.link https://golang.org/doc/effective_go.html#allocation_new
+
+- make:
+.link https://golang.org/ref/spec#Making_slices_maps_and_channels
+.link https://golang.org/doc/effective_go.html#allocation_make
+
+.link https://dave.cheney.net/2014/08/17/go-has-both-make-and-new-functions-what-gives
+
