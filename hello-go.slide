@@ -133,6 +133,22 @@ There is no guarantee that the **print* and **println* functions will stay in th
 .play src/flag.go
 .link https://golang.org/pkg/flag/
 
+* Testing
+.link https://golang.org/doc/faq#How_do_I_write_a_unit_test
+.link https://golang.org/doc/faq#testing_framework
+.link https://golang.org/doc/code.html#Testing
+
+.link https://github.com/golang/go/wiki/TableDrivenTests
+
+.link https://dave.cheney.net/2019/05/07/prefer-table-driven-tests
+.link https://dave.cheney.net/2016/05/10/test-fixtures-in-go
+
+Files whose names begin with "_" (including "_test.go") or "." are ignored.
+.link https://golang.org/cmd/go/#hdr-Test_packages
+
+* Coverage
+.link https://blog.golang.org/cover
+
 * Exec
 .play src/exec.go
 .link https://golang.org/pkg/os/exec/
