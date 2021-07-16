@@ -10,9 +10,10 @@ func main() {
 	wg.Wait()
 }
 
+// START OMIT
 func f() {
 	defer func() {
-		if r := recover(); r != nil {
+		if recover() != nil {
 			println("recover f")
 		}
 		println("defer f")
@@ -25,3 +26,5 @@ func p() {
 	defer println("defer p")
 	panic("panic p")
 }
+
+// END OMIT
