@@ -187,3 +187,9 @@ Files whose names begin with "_" (including "_test.go") or "." are ignored.
 .link https://blog.golang.org/context-and-structs
 .link https://www.ardanlabs.com/blog/2019/09/context-package-semantics-in-go.html
 .link https://www.youtube.com/watch?v=LSzR0VEraWw
+
+* Struct
+.play src/struct.go
+https://golang.org/ref/spec#Struct_types
+.link https://dave.cheney.net/2014/03/25/the-empty-struct
+https://tour.golang.org/moretypes/5
