@@ -165,3 +165,6 @@ Files whose names begin with "_" (including "_test.go") or "." are ignored.
 
 .link https://golang.org/pkg/net/http/
 .link https://golang.org/doc/effective_go.html#web_server
+
+* Dependencies
+.link https://research.swtch.com/deps
