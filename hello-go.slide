@@ -222,3 +222,13 @@ https://tour.golang.org/moretypes/5
 * Internal Directories
 .link https://golang.org/cmd/go/#hdr-Internal_Directories
 
+* Concurrency
+"Do not communicate by sharing memory; instead, share memory by communicating"
+
+.link https://golang.org/doc/effective_go.html#concurrency
+.link https://talks.golang.org/2012/concurrency.slide#1
+.link https://blog.golang.org/io2013-talk-concurrency
+.link https://vimeo.com/49718712
+.link https://blog.golang.org/waza-talk
+.link https://blog.golang.org/pipelines
+.link https://www.youtube.com/watch?v=YEKjSzIwAdA
