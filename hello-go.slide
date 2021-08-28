@@ -109,7 +109,7 @@ There is no guarantee that the **print* and **println* functions will stay in th
 * Switch
 "A switch statement is a shorter way to write a sequence of if - else statements"
 
-.play src/switch.go
+.play -edit src/switch.go /START OMIT/,/END OMIT/
 .link https://golang.org/ref/spec#Switch_statements
 .link https://golang.org/doc/effective_go#switch
 .link https://tour.golang.org/flowcontrol/9

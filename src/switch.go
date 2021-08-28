@@ -7,6 +7,7 @@ import (
 )
 
 func main() {
+	// START OMIT
 	rand.Seed(time.Now().UnixNano())
 	r := rand.Intn(3)
 	switch r {
@@ -17,4 +18,5 @@ func main() {
 	default:
 		fmt.Println(2)
 	}
+	// END OMIT
 }
