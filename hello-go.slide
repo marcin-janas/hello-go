@@ -106,6 +106,14 @@ There is no guarantee that the **print* and **println* functions will stay in th
 .link https://golang.org/doc/effective_go.html#for
 .link https://tour.golang.org/flowcontrol/1
 
+* Switch
+"A switch statement is a shorter way to write a sequence of if - else statements"
+
+.play src/switch.go
+.link https://golang.org/ref/spec#Switch_statements
+.link https://golang.org/doc/effective_go#switch
+.link https://tour.golang.org/flowcontrol/9
+
 * Function
 .play src/func.go
 .link https://golang.org/ref/spec#Function_types
