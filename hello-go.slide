@@ -144,6 +144,7 @@ There is no guarantee that the **print* and **println* functions will stay in th
 .link https://golang.org/doc/faq#How_do_I_write_a_unit_test
 .link https://golang.org/doc/faq#testing_framework
 .link https://golang.org/doc/code.html#Testing
+.link https://golang.org/doc/faq#assertions
 
 .link https://github.com/golang/go/wiki/TableDrivenTests
 
