@@ -10,6 +10,7 @@ My place to collect information about Go
   - [Zero values](#zero-values)
   - [Constants](#constants)
   - [Variables](#variables)
+  - [Import](#import)
 
 ## How to view slides
 https://go-talks.appspot.com/github.com/marcin-janas/hello-go/hello-go.slide#1
@@ -101,7 +102,7 @@ func main() {
 - [ref/spec#Iota](https://golang.org/ref/spec#Iota)
 - [doc/effective_go#constants](https://golang.org/doc/effective_go.html#constants)
 
-* Variables
+## Variables
 ```go
 package main
 
@@ -118,4 +119,23 @@ func main() {
 ```
 - [ref/spec#Variables](https://golang.org/ref/spec#Variables)
 - [doc/effective_go#variables](https://golang.org/doc/effective_go.html#variables)
+
+## Import
+```go
+package main
+
+import (
+	"fmt"
+	"log"
+)
+
+func main() {
+	fmt.Println("Hello, Go!") // Println function from the fmt package
+	log.Println("Hello, Go!") // Println function from the log package
+}
+```
+- [doc/effective_go#package-names](https://golang.org/doc/effective_go.html#package-names)
+- [tour/basics/2](https://tour.golang.org/basics/2)
+- [pkg/fmt/#Println](https://golang.org/pkg/fmt/#Println)
+- [pkg/log/#Println](https://golang.org/pkg/log/#Println)
 
