@@ -11,6 +11,7 @@ My place to collect information about Go
   - [Constants](#constants)
   - [Variables](#variables)
   - [Import](#import)
+  - [Init](#init)
 
 ## How to view slides
 https://go-talks.appspot.com/github.com/marcin-janas/hello-go/hello-go.slide#1
@@ -136,6 +137,21 @@ func main() {
 ```
 - [doc/effective_go#package-names](https://golang.org/doc/effective_go.html#package-names)
 - [tour/basics/2](https://tour.golang.org/basics/2)
-- [pkg/fmt/#Println](https://golang.org/pkg/fmt/#Println)
-- [pkg/log/#Println](https://golang.org/pkg/log/#Println)
+- [pkg/fmt/#Println](https://pkg.go.dev/fmt#Println)
+- [pkg/log/#Println](https://pkg.go.dev/log#Println)
+
+## Init
+```go
+package main
+
+func init() {
+	println("init")
+}
+
+func main() {
+	println("main")
+}
+```
+- [doc/effective_go#init](https://golang.org/doc/effective_go.html#init)
+- [ref/spec#Package_initialization](https://golang.org/ref/spec#Package_initialization)
 
