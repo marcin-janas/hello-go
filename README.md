@@ -8,6 +8,7 @@ My place to collect information about Go
   - [Built-in functions](#built-in-functions)
   - [Basic types](#basic-types)
   - [Zero values](#zero-values)
+  - [Constants](#constants)
 
 ## How to view slides
 https://go-talks.appspot.com/github.com/marcin-janas/hello-go/hello-go.slide#1
@@ -22,7 +23,7 @@ func main() {
 ```
 - [ref/spec#Program_execution](https://golang.org/ref/spec#Program_execution)
 - [ref/spec#Bootstrapping](https://golang.org/ref/spec#Bootstrapping)
-- [doc/effective_go.html#package-names](https://golang.org/doc/effective_go.html#package-names)
+- [doc/effective_go#package-names](https://golang.org/doc/effective_go.html#package-names)
 - [tour/basics/1](https://tour.golang.org/basics/1)
 - [pkg/builtin/#println](https://pkg.go.dev/builtin#println)
 
@@ -77,3 +78,25 @@ nil // for pointers, functions, interfaces, slices, channels, and maps
 ```
 - [ref/spec#The_zero_value](https://golang.org/ref/spec#The_zero_value)
 - [tour/basics/12](https://tour.golang.org/basics/12)
+
+* Constants
+```go
+package main
+
+const (
+	STR = "string"
+	_   = iota // ignore first value
+	TWO
+	SIX = iota * TWO
+	EIGHT
+	TEN
+)
+
+func main() {
+	println(STR, TWO, SIX, EIGHT, TEN)
+}
+```
+- [ref/spec#Constants](https://golang.org/ref/spec#Constants)
+- [ref/spec#Iota](https://golang.org/ref/spec#Iota)
+- [doc/effective_go#constants](https://golang.org/doc/effective_go.html#constants)
+
