@@ -12,6 +12,7 @@ My place to collect information about Go
   - [Variables](#variables)
   - [Import](#import)
   - [Init](#init)
+  - [Blank identifier](#blank-identifier)
 
 ## How to view slides
 https://go-talks.appspot.com/github.com/marcin-janas/hello-go/hello-go.slide#1
@@ -154,4 +155,20 @@ func main() {
 ```
 - [doc/effective_go#init](https://golang.org/doc/effective_go.html#init)
 - [ref/spec#Package_initialization](https://golang.org/ref/spec#Package_initialization)
+
+## Blank identifier
+```go
+package main
+
+import _ "fmt"
+
+func main() {
+	str := "test"
+	for _, r := range str {
+		_ = r
+	}
+}
+```
+- [ref/spec#Blank_identifier](https://golang.org/ref/spec#Blank_identifier)
+- [doc/effective_go#blank](https://golang.org/doc/effective_go.html#blank)
 
