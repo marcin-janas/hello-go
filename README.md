@@ -7,6 +7,7 @@ My place to collect information about Go
   - [Keywords](#keywords)
   - [Built-in functions](#built-in-functions)
   - [Basic types](#basic-types)
+  - [Zero values](#zero-values)
 
 ## How to view slides
 https://go-talks.appspot.com/github.com/marcin-janas/hello-go/hello-go.slide#1
@@ -56,8 +57,8 @@ There is no guarantee that the **print** and **println** functions will stay in 
 string
 bool
 uint, uint8, uint16, uint32, uint64, uintptr, int, int8, int16, int32, int64
-byte (alias for uint8)
-rune (alias for int32)
+byte // alias for uint8
+rune // alias for int32
 float32, float64
 complex64, complex128
 pointer, function, interface, slice, channel, map
@@ -66,3 +67,13 @@ array, struct
 - [ref/spec#Types](https://golang.org/ref/spec#Types)
 - [tour/basics/11](https://tour.golang.org/basics/11)
 
+## Zero values
+```go
+"" // for strings
+false // for booleans
+0 // for numeric types
+nil // for pointers, functions, interfaces, slices, channels, and maps
+// each element of an array of structs will have its fields zeroed if no value is specified
+```
+- [ref/spec#The_zero_value](https://golang.org/ref/spec#The_zero_value)
+- [tour/basics/12](https://tour.golang.org/basics/12)
