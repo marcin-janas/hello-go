@@ -13,6 +13,7 @@ My place to collect information about Go
   - [Import](#import)
   - [Init](#init)
   - [Blank identifier](#blank-identifier)
+  - [Unused](#unused)
 
 ## How to view slides
 https://go-talks.appspot.com/github.com/marcin-janas/hello-go/hello-go.slide#1
@@ -171,4 +172,17 @@ func main() {
 ```
 - [ref/spec#Blank_identifier](https://golang.org/ref/spec#Blank_identifier)
 - [doc/effective_go#blank](https://golang.org/doc/effective_go.html#blank)
+
+## Unused
+```go
+package main
+
+import "fmt"
+
+func main() {
+	msg := "Hello, Go!"
+}
+```
+- [doc/effective_go#blank_unused](https://golang.org/doc/effective_go.html#blank_unused)
+- [doc/faq#unused_variables_and_imports]https://golang.org/doc/faq#unused_variables_and_imports
 
