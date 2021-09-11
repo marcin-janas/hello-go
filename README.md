@@ -9,6 +9,7 @@ My place to collect information about Go
   - [Basic types](#basic-types)
   - [Zero values](#zero-values)
   - [Constants](#constants)
+  - [Variables](#variables)
 
 ## How to view slides
 https://go-talks.appspot.com/github.com/marcin-janas/hello-go/hello-go.slide#1
@@ -99,4 +100,22 @@ func main() {
 - [ref/spec#Constants](https://golang.org/ref/spec#Constants)
 - [ref/spec#Iota](https://golang.org/ref/spec#Iota)
 - [doc/effective_go#constants](https://golang.org/doc/effective_go.html#constants)
+
+* Variables
+```go
+package main
+
+var (
+	str1 = "test"
+	int1 int
+)
+
+func main() {
+	var str2 string
+	int2 := 2
+	println(str1, int1, str2, int2)
+}
+```
+- [ref/spec#Variables](https://golang.org/ref/spec#Variables)
+- [doc/effective_go#variables](https://golang.org/doc/effective_go.html#variables)
 
