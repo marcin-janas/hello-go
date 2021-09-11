@@ -6,6 +6,7 @@ My place to collect information about Go
   - [Main function](#main-function)
   - [Keywords](#keywords)
   - [Built-in functions](#built-in-functions)
+  - [Basic types](#basic-types)
 
 ## How to view slides
 https://go-talks.appspot.com/github.com/marcin-janas/hello-go/hello-go.slide#1
@@ -47,6 +48,21 @@ There is no guarantee that the **print** and **println** functions will stay in 
     delete, imag, len, make, new,
     panic, print, println, real, recover
 ```
-[ref/spec#Built-in_functions](https://golang.org/ref/spec#Built-in_functions)
-[pkg/builtin](https://pkg.go.dev/builtin)
+- [ref/spec#Built-in_functions](https://golang.org/ref/spec#Built-in_functions)
+- [pkg/builtin](https://pkg.go.dev/builtin)
+
+## Basic types
+```go
+string
+bool
+uint, uint8, uint16, uint32, uint64, uintptr, int, int8, int16, int32, int64
+byte (alias for uint8)
+rune (alias for int32)
+float32, float64
+complex64, complex128
+pointer, function, interface, slice, channel, map
+array, struct
+```
+- [ref/spec#Types](https://golang.org/ref/spec#Types)
+- [tour/basics/11](https://tour.golang.org/basics/11)
 
