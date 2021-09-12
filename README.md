@@ -16,6 +16,7 @@ My place to collect information about Go
   - [Unused](#unused)
   - [If](#if)
   - [For](#for)
+  - [Switch](#switch)
 
 ## How to view slides
 https://go-talks.appspot.com/github.com/marcin-janas/hello-go/hello-go.slide#1
@@ -230,4 +231,34 @@ func main() {
 - [ref/spec#For_statements](https://golang.org/ref/spec#For_statements)
 - [doc/effective_go.html#for](https://golang.org/doc/effective_go.html#for)
 - [tour/flowcontrol/1](https://tour.golang.org/flowcontrol/1)
+
+## Switch
+"A switch statement is a shorter way to write a sequence of if - else statements"
+```go
+package main
+
+import (
+	"fmt"
+	"math/rand"
+	"time"
+)
+
+func main() {
+	rand.Seed(time.Now().UnixNano())
+	r := rand.Intn(3)
+	switch r {
+	case 0:
+		fmt.Println(0)
+	case 1:
+		fmt.Println(1)
+	default:
+		fmt.Println(2)
+	}
+}
+```
+- [ref/spec#Switch_statements](https://golang.org/ref/spec#Switch_statements)
+- [doc/effective_go#switch](https://golang.org/doc/effective_go#switch)
+- [tour/flowcontrol/9](https://tour.golang.org/flowcontrol/9)
+- [pkg/math/rand#Seed](https://pkg.go.dev/math/rand#Seed)
+- [pkg/math/rand#Intn](https://pkg.go.dev/math/rand#Intn)
 
