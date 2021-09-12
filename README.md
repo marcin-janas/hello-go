@@ -14,6 +14,8 @@ My place to collect information about Go
   - [Init](#init)
   - [Blank identifier](#blank-identifier)
   - [Unused](#unused)
+  - [If](#if)
+  - [For](#for)
 
 ## How to view slides
 https://go-talks.appspot.com/github.com/marcin-janas/hello-go/hello-go.slide#1
@@ -205,4 +207,27 @@ func main() {
 - [ref/spec#If_statements](https://golang.org/ref/spec#If_statements)
 - [doc/effective_go.html#if](https://golang.org/doc/effective_go.html#if)
 - [doc/faq#Does_Go_have_a_ternary_form](https://golang.org/doc/faq#Does_Go_have_a_ternary_form)
+
+## For
+"Go has only one looping construct, the for loop"
+```go
+package main
+
+func main() {
+	for {
+	}
+
+	s := []int{1, 2, 3, 4, 5}
+	for n, v := range s {
+		println(n, v)
+	}
+
+	for i := 0; i <= 9; i++ {
+		println(i)
+	}
+}
+```
+- [ref/spec#For_statements](https://golang.org/ref/spec#For_statements)
+- [doc/effective_go.html#for](https://golang.org/doc/effective_go.html#for)
+- [tour/flowcontrol/1](https://tour.golang.org/flowcontrol/1)
 
