@@ -184,5 +184,25 @@ func main() {
 }
 ```
 - [doc/effective_go#blank_unused](https://golang.org/doc/effective_go.html#blank_unused)
-- [doc/faq#unused_variables_and_imports]https://golang.org/doc/faq#unused_variables_and_imports
+- [doc/faq#unused_variables_and_imports](https://golang.org/doc/faq#unused_variables_and_imports)
+
+## If
+"A language needs only one conditional control flow construct"
+```go
+package main
+
+func main() {
+	a := 0
+	if a > 0 {
+		println(">")
+	} else if a < 0 {
+		println("<")
+	} else {
+		println("=")
+	}
+}
+```
+- [ref/spec#If_statements](https://golang.org/ref/spec#If_statements)
+- [doc/effective_go.html#if](https://golang.org/doc/effective_go.html#if)
+- [doc/faq#Does_Go_have_a_ternary_form](https://golang.org/doc/faq#Does_Go_have_a_ternary_form)
 
