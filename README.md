@@ -10,6 +10,7 @@ My place to collect information about Go
   - [Zero values](#zero-values)
   - [Constants](#constants)
   - [Variables](#variables)
+  - [Packages](#packages)
   - [Import](#import)
   - [Init](#init)
   - [Blank identifier](#blank-identifier)
@@ -17,9 +18,6 @@ My place to collect information about Go
   - [If](#if)
   - [For](#for)
   - [Switch](#switch)
-
-## How to view slides
-https://go-talks.appspot.com/github.com/marcin-janas/hello-go/hello-go.slide#1
 
 ## Main function
 ```go
@@ -87,7 +85,7 @@ nil // for pointers, functions, interfaces, slices, channels, and maps
 - [ref/spec#The_zero_value](https://golang.org/ref/spec#The_zero_value)
 - [tour/basics/12](https://tour.golang.org/basics/12)
 
-* Constants
+## Constants
 ```go
 package main
 
@@ -125,6 +123,14 @@ func main() {
 ```
 - [ref/spec#Variables](https://golang.org/ref/spec#Variables)
 - [doc/effective_go#variables](https://golang.org/doc/effective_go.html#variables)
+
+## Packages
+- [ref/spec#Packages](https://golang.org/ref/spec#Packages)
+- [tour/basics/1](https://tour.golang.org/basics/1)
+- [doc/effective_go#package-names](https://golang.org/doc/effective_go#package-names)
+- [avoid-package-names-like-base-util-or-common](https://dave.cheney.net/2019/01/08/avoid-package-names-like-base-util-or-common)
+- [pkg#1](https://golang.org/pkg/)
+- [pkg#2](https://github.com/pkg)
 
 ## Import
 ```go
