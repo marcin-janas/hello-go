@@ -27,10 +27,10 @@ func main() {
 	println("Hello, Go!") // Built-in println function
 }
 ```
-- [ref/spec#Program_execution](https://golang.org/ref/spec#Program_execution)
-- [ref/spec#Bootstrapping](https://golang.org/ref/spec#Bootstrapping)
-- [doc/effective_go#package-names](https://golang.org/doc/effective_go.html#package-names)
-- [tour/basics/1](https://tour.golang.org/basics/1)
+- [ref/spec#Program_execution](https://go.dev/ref/spec#Program_execution)
+- [ref/spec#Bootstrapping](https://go.dev/ref/spec#Bootstrapping)
+- [doc/effective_go#package-names](https://go.dev/doc/effective_go#package-names)
+- [tour/basics/1](https://go.dev/tour/basics/1)
 - [pkg/builtin/#println](https://pkg.go.dev/builtin#println)
 
 ## Keywords
@@ -45,9 +45,9 @@ Go only has **25** keywords!
 
 "Syntax is clean and light on keywords"
 
-- [ref/spec#Keywords](https://golang.org/ref/spec#Keywords)
+- [ref/spec#Keywords](https://go.dev/ref/spec#Keywords)
 - [src/go/.../token.go#L97](https://github.com/golang/go/blob/master/src/go/token/token.go#L97)
-- [doc/faq#principles](https://golang.org/doc/faq#principles)
+- [doc/faq#principles](https://go.dev/doc/faq#principles)
 
 ## Built-in functions
 There is no guarantee that the **print** and **println** functions will stay in the language!
@@ -56,7 +56,7 @@ There is no guarantee that the **print** and **println** functions will stay in 
     delete, imag, len, make, new,
     panic, print, println, real, recover
 ```
-- [ref/spec#Built-in_functions](https://golang.org/ref/spec#Built-in_functions)
+- [ref/spec#Built-in_functions](https://go.dev/ref/spec#Built-in_functions)
 - [pkg/builtin](https://pkg.go.dev/builtin)
 
 ## Basic types
@@ -71,8 +71,8 @@ complex64, complex128
 pointer, function, interface, slice, channel, map
 array, struct
 ```
-- [ref/spec#Types](https://golang.org/ref/spec#Types)
-- [tour/basics/11](https://tour.golang.org/basics/11)
+- [ref/spec#Types](https://go.dev/ref/spec#Types)
+- [tour/basics/11](https://go.dev/tour/basics/11)
 
 ## Zero values
 ```go
@@ -82,8 +82,8 @@ false // for booleans
 nil // for pointers, functions, interfaces, slices, channels, and maps
 // each element of an array of structs will have its fields zeroed if no value is specified
 ```
-- [ref/spec#The_zero_value](https://golang.org/ref/spec#The_zero_value)
-- [tour/basics/12](https://tour.golang.org/basics/12)
+- [ref/spec#The_zero_value](https://go.dev/ref/spec#The_zero_value)
+- [tour/basics/12](https://go.dev/tour/basics/12)
 
 ## Constants
 ```go
@@ -102,9 +102,9 @@ func main() {
 	println(STR, TWO, SIX, EIGHT, TEN)
 }
 ```
-- [ref/spec#Constants](https://golang.org/ref/spec#Constants)
-- [ref/spec#Iota](https://golang.org/ref/spec#Iota)
-- [doc/effective_go#constants](https://golang.org/doc/effective_go.html#constants)
+- [ref/spec#Constants](https://go.dev/ref/spec#Constants)
+- [ref/spec#Iota](https://go.dev/ref/spec#Iota)
+- [doc/effective_go#constants](https://go.dev/doc/effective_go#constants)
 
 ## Variables
 ```go
@@ -121,15 +121,15 @@ func main() {
 	println(str1, int1, str2, int2)
 }
 ```
-- [ref/spec#Variables](https://golang.org/ref/spec#Variables)
-- [doc/effective_go#variables](https://golang.org/doc/effective_go.html#variables)
+- [ref/spec#Variables](https://go.dev/ref/spec#Variables)
+- [doc/effective_go#variables](https://go.dev/doc/effective_go#variables)
 
 ## Packages
-- [ref/spec#Packages](https://golang.org/ref/spec#Packages)
-- [tour/basics/1](https://tour.golang.org/basics/1)
-- [doc/effective_go#package-names](https://golang.org/doc/effective_go#package-names)
+- [ref/spec#Packages](https://go.dev/ref/spec#Packages)
+- [tour/basics/1](https://go.dev/tour/basics/1)
+- [doc/effective_go#package-names](https://go.dev/doc/effective_go#package-names)
 - [avoid-package-names-like-base-util-or-common](https://dave.cheney.net/2019/01/08/avoid-package-names-like-base-util-or-common)
-- [pkg#1](https://golang.org/pkg/)
+- [pkg#1](https://pkg.go.dev)
 - [pkg#2](https://github.com/pkg)
 
 ## Import
@@ -146,8 +146,8 @@ func main() {
 	log.Println("Hello, Go!") // Println function from the log package
 }
 ```
-- [doc/effective_go#package-names](https://golang.org/doc/effective_go.html#package-names)
-- [tour/basics/2](https://tour.golang.org/basics/2)
+- [doc/effective_go#package-names](https://go.dev/doc/effective_go#package-names)
+- [tour/basics/2](https://go.dev/tour/basics/2)
 - [pkg/fmt/#Println](https://pkg.go.dev/fmt#Println)
 - [pkg/log/#Println](https://pkg.go.dev/log#Println)
 
@@ -163,8 +163,8 @@ func main() {
 	println("main")
 }
 ```
-- [doc/effective_go#init](https://golang.org/doc/effective_go.html#init)
-- [ref/spec#Package_initialization](https://golang.org/ref/spec#Package_initialization)
+- [doc/effective_go#init](https://go.dev/doc/effective_go#init)
+- [ref/spec#Package_initialization](https://go.dev/ref/spec#Package_initialization)
 
 ## Blank identifier
 ```go
@@ -179,8 +179,8 @@ func main() {
 	}
 }
 ```
-- [ref/spec#Blank_identifier](https://golang.org/ref/spec#Blank_identifier)
-- [doc/effective_go#blank](https://golang.org/doc/effective_go.html#blank)
+- [ref/spec#Blank_identifier](https://go.dev/ref/spec#Blank_identifier)
+- [doc/effective_go#blank](https://go.dev/doc/effective_go#blank)
 
 ## Unused
 ```go
@@ -192,8 +192,8 @@ func main() {
 	msg := "Hello, Go!"
 }
 ```
-- [doc/effective_go#blank_unused](https://golang.org/doc/effective_go.html#blank_unused)
-- [doc/faq#unused_variables_and_imports](https://golang.org/doc/faq#unused_variables_and_imports)
+- [doc/effective_go#blank_unused](https://go.dev/doc/effective_go#blank_unused)
+- [doc/faq#unused_variables_and_imports](https://go.dev/doc/faq#unused_variables_and_imports)
 
 ## If
 "A language needs only one conditional control flow construct"
@@ -211,9 +211,9 @@ func main() {
 	}
 }
 ```
-- [ref/spec#If_statements](https://golang.org/ref/spec#If_statements)
-- [doc/effective_go.html#if](https://golang.org/doc/effective_go.html#if)
-- [doc/faq#Does_Go_have_a_ternary_form](https://golang.org/doc/faq#Does_Go_have_a_ternary_form)
+- [ref/spec#If_statements](https://go.dev/ref/spec#If_statements)
+- [doc/effective_go#if](https://go.dev/doc/effective_go#if)
+- [doc/faq#Does_Go_have_a_ternary_form](https://go.dev/doc/faq#Does_Go_have_a_ternary_form)
 
 ## For
 "Go has only one looping construct, the for loop"
@@ -234,9 +234,9 @@ func main() {
 	}
 }
 ```
-- [ref/spec#For_statements](https://golang.org/ref/spec#For_statements)
-- [doc/effective_go.html#for](https://golang.org/doc/effective_go.html#for)
-- [tour/flowcontrol/1](https://tour.golang.org/flowcontrol/1)
+- [ref/spec#For_statements](https://go.dev/ref/spec#For_statements)
+- [doc/effective_go#for](https://go.dev/doc/effective_go#for)
+- [tour/flowcontrol/1](https://go.dev/tour/flowcontrol/1)
 
 ## Switch
 "A switch statement is a shorter way to write a sequence of if - else statements"
@@ -262,9 +262,9 @@ func main() {
 	}
 }
 ```
-- [ref/spec#Switch_statements](https://golang.org/ref/spec#Switch_statements)
-- [doc/effective_go#switch](https://golang.org/doc/effective_go#switch)
-- [tour/flowcontrol/9](https://tour.golang.org/flowcontrol/9)
+- [ref/spec#Switch_statements](https://go.dev/ref/spec#Switch_statements)
+- [doc/effective_go#switch](https://go.dev/doc/effective_go#switch)
+- [tour/flowcontrol/9](https://go.dev/tour/flowcontrol/9)
 - [pkg/math/rand#Seed](https://pkg.go.dev/math/rand#Seed)
 - [pkg/math/rand#Intn](https://pkg.go.dev/math/rand#Intn)
 
