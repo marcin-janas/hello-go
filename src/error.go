@@ -1,13 +1,9 @@
 package main
 
-import (
-	"log"
-	"os"
-)
+import "os"
 
 func main() {
-	_, err := os.Open("")
-	if err != nil {
-		log.Fatal(err)
+	if _, err := os.Open(""); err != nil {
+		os.Exit(1)
 	}
 }

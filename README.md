@@ -20,6 +20,7 @@ My place to collect information about Go
   - [Switch](#switch)
   - [Function](#function)
   - [Defer](#defer)
+  - [Error handling](#error-handling)
 
 ## Main function
 ```go
@@ -327,3 +328,21 @@ func f2() {
 - [doc/effective_go#defer](https://go.dev/doc/effective_go#defer)
 - [blog/defer-panic-and-recover](https://go.dev/blog/defer-panic-and-recover)
 
+## Error handling
+```go
+package main
+
+import "os"
+
+func main() {
+	if _, err := os.Open(""); err != nil {
+		os.Exit(1)
+	}
+}
+```
+- [ref/spec#Errors](https://go.dev/ref/spec#Errors)
+- [doc/effective_go#errors](https://go.dev/doc/effective_go#errors)
+- [doc/faq#exceptions](https://go.dev/doc/faq#exceptions)
+- [blog/error-handling-and-go](https://go.dev/blog/error-handling-and-go)
+- [pkg/os#Open](https://pkg.go.dev/os#Open)
+- [pkg/os#Exit](https://pkg.go.dev/os#Exit)
