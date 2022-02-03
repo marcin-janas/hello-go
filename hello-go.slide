@@ -1,8 +1,3 @@
-* Recover
-.play src/recover.go
-.link https://golang.org/doc/effective_go#recover
-.link https://medium.com/a-journey-with-go/go-how-does-a-program-recover-fbbbf27cc31e
-
 * Log
 .play src/log.go
 .link https://golang.org/pkg/log/

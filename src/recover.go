@@ -1,30 +1,11 @@
 package main
 
-import "sync"
-
-var wg sync.WaitGroup
-
 func main() {
-	wg.Add(1)
-	go f()
-	wg.Wait()
-}
-
-// START OMIT
-func f() {
 	defer func() {
-		if recover() != nil {
-			println("recover f")
+		if msg, ok := recover().(string); ok {
+			print("recover: " + msg)
 		}
-		println("defer f")
-		wg.Done()
 	}()
-	p()
-}
 
-func p() {
-	defer println("defer p")
-	panic("panic p")
+	panic("panic msg")
 }
-
-// END OMIT

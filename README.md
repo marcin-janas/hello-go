@@ -21,6 +21,7 @@ My place to collect information about Go
   - [Function](#function)
   - [Defer](#defer)
   - [Error handling](#error-handling)
+  - [Panic and recover](#panic-and-recover)
 
 ## Main function
 ```go
@@ -344,5 +345,29 @@ func main() {
 - [doc/effective_go#errors](https://go.dev/doc/effective_go#errors)
 - [doc/faq#exceptions](https://go.dev/doc/faq#exceptions)
 - [blog/error-handling-and-go](https://go.dev/blog/error-handling-and-go)
+- [blog/errors-are-values](https://go.dev/blog/errors-are-values)
 - [pkg/os#Open](https://pkg.go.dev/os#Open)
 - [pkg/os#Exit](https://pkg.go.dev/os#Exit)
+
+## Panic and recover
+```go
+package main
+
+func main() {
+	defer func() {
+		if msg, ok := recover().(string); ok {
+			print("recover: " + msg)
+		}
+	}()
+
+	panic("panic msg")
+}
+```
+- [doc/effective_go#panic](https://go.dev/doc/effective_go#panic)
+- [doc/effective_go#recover](https://go.dev/doc/effective_go#recover)
+- [blog/defer-panic-and-recover](https://go.dev/blog/defer-panic-and-recover)
+- [ref/spec#Handling_panics](https://go.dev/ref/spec#Handling_panics)
+- [ref/spec#Run_time_panics](https://go.dev/ref/spec#Run_time_panics)
+- [ref/spec#Type_assertions](https://go.dev/ref/spec#Type_assertions)
+- [medium/go-how-does-a-program-recover](https://medium.com/a-journey-with-go/go-how-does-a-program-recover-fbbbf27cc31e)
+
