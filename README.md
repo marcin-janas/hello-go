@@ -19,6 +19,7 @@ My place to collect information about Go
   - [For](#for)
   - [Switch](#switch)
   - [Function](#function)
+  - [Defer](#defer)
 
 ## Main function
 ```go
@@ -303,4 +304,26 @@ func main() {
 - [tour/basics/4](https://go.dev/tour/basics/4)
 - [tour/basics/5](https://go.dev/tour/basics/5)
 - [tour/basics/6](https://go.dev/tour/basics/6)
+
+## Defer
+```go
+package main
+
+func main() {
+	println("func main")
+	f1()
+}
+
+func f1() {
+	defer f2()
+	println("func f1")
+}
+
+func f2() {
+	println("func f2")
+}
+```
+- [ref/spec#Defer_statements](https://go.dev/ref/spec#Defer_statements)
+- [doc/effective_go#defer](https://go.dev/doc/effective_go#defer)
+- [blog/defer-panic-and-recover](https://go.dev/blog/defer-panic-and-recover)
 

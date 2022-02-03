@@ -1,9 +1,3 @@
-* Defer
-.play src/defer.go
-.link https://golang.org/ref/spec#Defer_statements
-.link https://golang.org/doc/effective_go.html#defer
-.link https://blog.golang.org/defer-panic-and-recover
-
 * Recover
 .play src/recover.go
 .link https://golang.org/doc/effective_go#recover
