@@ -18,6 +18,7 @@ My place to collect information about Go
   - [If](#if)
   - [For](#for)
   - [Switch](#switch)
+  - [Function](#function)
 
 ## Main function
 ```go
@@ -267,4 +268,39 @@ func main() {
 - [tour/flowcontrol/9](https://go.dev/tour/flowcontrol/9)
 - [pkg/math/rand#Seed](https://pkg.go.dev/math/rand#Seed)
 - [pkg/math/rand#Intn](https://pkg.go.dev/math/rand#Intn)
+
+## Function
+```go
+package main
+
+func f() {}
+
+func echo(s string) {
+	println("echo: " + s)
+}
+
+func sum(i, j int) int {
+	return i + j
+}
+
+func swap(i, j int) (int, int) {
+	return j, i
+}
+
+func main() {
+	f()
+	println(f)
+
+	echo("func")
+
+	println(sum(1, 2))
+	println(swap(1, 0))
+}
+```
+- [ref/spec#Function_types](https://go.dev/ref/spec#Function_types)
+- [doc/effective_go#functions](https://go.dev/doc/effective_go#functions)
+- [doc/faq#Functions_methods](https://go.dev/doc/faq#Functions_methods)
+- [tour/basics/4](https://go.dev/tour/basics/4)
+- [tour/basics/5](https://go.dev/tour/basics/5)
+- [tour/basics/6](https://go.dev/tour/basics/6)
 
