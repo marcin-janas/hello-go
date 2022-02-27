@@ -2,11 +2,12 @@ package main
 
 import "fmt"
 
-type Test struct {
-	test string
+type rectangle struct {
+	description string
+	a, b        int
 }
 
 func main() {
-	test := Test{"test"}
-	fmt.Println(test.test)
+	r := rectangle{"square", 2, 2}
+	fmt.Println(r)
 }

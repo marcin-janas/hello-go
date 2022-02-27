@@ -2,7 +2,6 @@
 My place to collect information about Go
 
 - [Hello Go](#hello-go)
-  - [How to view slides](#how-to-view-slides)
   - [Main function](#main-function)
   - [Keywords](#keywords)
   - [Built-in functions](#built-in-functions)
@@ -19,6 +18,7 @@ My place to collect information about Go
   - [For](#for)
   - [Switch](#switch)
   - [Function](#function)
+  - [Struct](#struct)
   - [Defer](#defer)
   - [Error handling](#error-handling)
   - [Panic and recover](#panic-and-recover)
@@ -306,6 +306,26 @@ func main() {
 - [tour/basics/4](https://go.dev/tour/basics/4)
 - [tour/basics/5](https://go.dev/tour/basics/5)
 - [tour/basics/6](https://go.dev/tour/basics/6)
+
+## Struct
+```go
+package main
+
+import "fmt"
+
+type rectangle struct {
+	description string
+	a, b        int
+}
+
+func main() {
+	r := rectangle{"square", 2, 2}
+	fmt.Println(r)
+}
+```
+- [ref/spec#Struct_types](https://go.dev/ref/spec#Struct_types)
+- [tour/moretypes/5](https://go.dev/tour/moretypes/5)
+- [the-empty-struct](https://dave.cheney.net/2014/03/25/the-empty-struct)
 
 ## Defer
 ```go

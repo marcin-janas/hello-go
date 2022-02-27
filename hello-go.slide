@@ -42,12 +42,6 @@ Files whose names begin with "_" (including "_test.go") or "." are ignored.
 .link https://golang.org/pkg/net/http/
 .link https://golang.org/doc/effective_go.html#web_server
 
-* Packages
-.link https://golang.org/pkg/
-.link https://github.com/pkg
-
-.link https://dave.cheney.net/2019/01/08/avoid-package-names-like-base-util-or-common
-
 * Dependencies
 .link https://research.swtch.com/deps
 
@@ -61,12 +55,6 @@ Files whose names begin with "_" (including "_test.go") or "." are ignored.
 .link https://blog.golang.org/context-and-structs
 .link https://www.ardanlabs.com/blog/2019/09/context-package-semantics-in-go.html
 .link https://www.youtube.com/watch?v=LSzR0VEraWw
-
-* Struct
-.play src/struct.go
-.link https://golang.org/ref/spec#Struct_types
-.link https://dave.cheney.net/2014/03/25/the-empty-struct
-.link https://tour.golang.org/moretypes/5
 
 * Make & New
 - new:
