@@ -19,6 +19,8 @@ My place to collect information about Go
   - [Switch](#switch)
   - [Function](#function)
   - [Struct](#struct)
+  - [Methods](#methods)
+  - [Testing](#testing)
   - [Defer](#defer)
   - [Error handling](#error-handling)
   - [Panic and recover](#panic-and-recover)
@@ -132,7 +134,7 @@ func main() {
 - [ref/spec#Packages](https://go.dev/ref/spec#Packages)
 - [tour/basics/1](https://go.dev/tour/basics/1)
 - [doc/effective_go#package-names](https://go.dev/doc/effective_go#package-names)
-- [avoid-package-names-like-base-util-or-common](https://dave.cheney.net/2019/01/08/avoid-package-names-like-base-util-or-common)
+- [dave.cheney/avoid-package-names-like-base-util-or-common](https://dave.cheney.net/2019/01/08/avoid-package-names-like-base-util-or-common)
 - [pkg#1](https://pkg.go.dev)
 - [pkg#2](https://github.com/pkg)
 
@@ -325,7 +327,7 @@ func main() {
 ```
 - [ref/spec#Struct_types](https://go.dev/ref/spec#Struct_types)
 - [tour/moretypes/5](https://go.dev/tour/moretypes/5)
-- [the-empty-struct](https://dave.cheney.net/2014/03/25/the-empty-struct)
+- [dave.cheney/the-empty-struct](https://dave.cheney.net/2014/03/25/the-empty-struct)
 
 ## Methods
 ```go
@@ -357,6 +359,53 @@ func main() {
 - [doc/faq#Functions_methods](https://go.dev/doc/faq#Functions_methods)
 - [doc/faq#methods_on_basics](https://go.dev/doc/faq#methods_on_basics)
 - [doc/faq#overloading](https://go.dev/doc/faq#overloading)
+
+## Testing
+```go
+package main
+
+import (
+	"testing"
+)
+
+func TestArea(t *testing.T) {
+	tests := []struct {
+		name string
+		rect rectangle
+		want int
+	}{
+		{
+			"empty rectangle",
+			rectangle{"empty", 0, 1},
+			0,
+		},
+		{
+			"special rectangle",
+			rectangle{"square", 2, 2},
+			4,
+		},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			if got := tt.rect.area(); got != tt.want {
+				t.Errorf("%s: want[%v] != got[%v]", tt.name, tt.want, got)
+			}
+		})
+	}
+}
+```
+- [doc/faq#Packages_Testing](https://go.dev/doc/faq#Packages_Testing)
+- [doc/faq#How_do_I_write_a_unit_test](https://go.dev/doc/faq#How_do_I_write_a_unit_test)
+- [doc/faq#testing_framework](https://go.dev/doc/faq#testing_framework)
+- [doc/code#Testing](https://go.dev/doc/code#Testing)
+- [doc/faq#assertions](https://go.dev/doc/faq#assertions)
+- [github/go/wiki/TableDrivenTests](https://github.com/golang/go/wiki/TableDrivenTests)
+- [github/go/wiki/CommonMistakes#using-goroutines-on-loop-iterator-variables](https://github.com/golang/go/wiki/CommonMistakes#using-goroutines-on-loop-iterator-variables)
+- [dave.cheney/prefer-table-driven-tests](https://dave.cheney.net/2019/05/07/prefer-table-driven-tests)
+- [dave.cheney/test-fixtures-in-go](https://dave.cheney.net/2016/05/10/test-fixtures-in-go)
+
+"Files whose names begin with "_" (including "_test.go") or "." are ignored."
+- [pkg/cmd/go#hdr-Test_packages](https://pkg.go.dev/cmd/go#hdr-Test_packages)
 
 ## Defer
 ```go
