@@ -327,6 +327,37 @@ func main() {
 - [tour/moretypes/5](https://go.dev/tour/moretypes/5)
 - [the-empty-struct](https://dave.cheney.net/2014/03/25/the-empty-struct)
 
+## Methods
+```go
+package main
+
+import "fmt"
+
+type rectangle struct {
+	description string
+	a, b        int
+}
+
+func (r rectangle) area() int {
+	return r.a * r.b
+}
+
+func main() {
+	r := rectangle{"square", 2, 2}
+	fmt.Println(r.area())
+}
+```
+- [ref/spec#](https://go.dev/ref/spec#Method_declarations)
+- [ref/spec#](https://go.dev/ref/spec#Method_expressions)
+- [ref/spec#](https://go.dev/ref/spec#Method_values)
+- [tour/methods/1](https://go.dev/tour/methods/1)
+- [tour/methods/2](https://go.dev/tour/methods/2)
+- [tour/methods/3](https://go.dev/tour/methods/3)
+- [doc/effective_go#methods](https://go.dev/doc/effective_go#methods)
+- [doc/faq#Functions_methods](https://go.dev/doc/faq#Functions_methods)
+- [doc/faq#methods_on_basics](https://go.dev/doc/faq#methods_on_basics)
+- [doc/faq#overloading](https://go.dev/doc/faq#overloading)
+
 ## Defer
 ```go
 package main
