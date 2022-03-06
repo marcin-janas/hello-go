@@ -42,17 +42,6 @@
 .link https://www.ardanlabs.com/blog/2019/09/context-package-semantics-in-go.html
 .link https://www.youtube.com/watch?v=LSzR0VEraWw
 
-* Make & New
-- new:
-.link https://golang.org/ref/spec#Allocation
-.link https://golang.org/doc/effective_go.html#allocation_new
-
-- make:
-.link https://golang.org/ref/spec#Making_slices_maps_and_channels
-.link https://golang.org/doc/effective_go.html#allocation_make
-
-.link https://dave.cheney.net/2014/08/17/go-has-both-make-and-new-functions-what-gives
-
 * Channels
 .play src/chan1.go
 .link https://golang.org/ref/spec#Channel_types

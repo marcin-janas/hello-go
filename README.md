@@ -9,6 +9,7 @@ My place to collect information about Go
   - [Zero values](#zero-values)
   - [Constants](#constants)
   - [Variables](#variables)
+  - [New and make](#new-and-make)
   - [Packages](#packages)
   - [Import](#import)
   - [Init](#init)
@@ -90,6 +91,7 @@ nil // for pointers, functions, interfaces, slices, channels, and maps
 ```
 - [ref/spec#The_zero_value](https://go.dev/ref/spec#The_zero_value)
 - [tour/basics/12](https://go.dev/tour/basics/12)
+- [dave.cheney/what-is-the-zero-value-and-why-is-it-useful](https://dave.cheney.net/2013/01/19/what-is-the-zero-value-and-why-is-it-useful)
 
 ## Constants
 ```go
@@ -129,6 +131,26 @@ func main() {
 ```
 - [ref/spec#Variables](https://go.dev/ref/spec#Variables)
 - [doc/effective_go#variables](https://go.dev/doc/effective_go#variables)
+
+## New and make
+```
+The new built-in function allocates memory. The first argument is a type,
+not a value, and the value returned is a pointer to a newly allocated zero
+value of that type.
+```
+[ref/spec#Allocation](https://go.dev/ref/spec#Allocation)
+[doc/effective_go#allocation_new](https://go.dev/doc/effective_go#allocation_new)
+
+```
+The make built-in function allocates and initializes an object of type
+slice, map, or chan (only). Like new, the first argument is a type, not
+a value. Unlike new, make's return type is the same as the type of its
+argument, not a pointer to it.
+```
+[ref/spec#Making_slices_maps_and_channels](https://go.dev/ref/spec#Making_slices_maps_and_channels)
+[doc/effective_go#allocation_make](https://go.dev/doc/effective_go#allocation_make)
+[tour/moretypes/13](https://go.dev/tour/moretypes/13)
+[dave.cheney/go-has-both-make-and-new-functions-what-gives](https://dave.cheney.net/2014/08/17/go-has-both-make-and-new-functions-what-gives)
 
 ## Packages
 - [ref/spec#Packages](https://go.dev/ref/spec#Packages)
