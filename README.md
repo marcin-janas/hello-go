@@ -138,8 +138,17 @@ The new built-in function allocates memory. The first argument is a type,
 not a value, and the value returned is a pointer to a newly allocated zero
 value of that type.
 ```
-[ref/spec#Allocation](https://go.dev/ref/spec#Allocation)
-[doc/effective_go#allocation_new](https://go.dev/doc/effective_go#allocation_new)
+- [ref/spec#Allocation](https://go.dev/ref/spec#Allocation)
+- [doc/effective_go#allocation_new](https://go.dev/doc/effective_go#allocation_new)
+```go
+package main
+
+func main() {
+	p := new(int) // pointer to int
+	println(p)
+	println(*p)
+}
+```
 
 ```
 The make built-in function allocates and initializes an object of type
@@ -147,10 +156,19 @@ slice, map, or chan (only). Like new, the first argument is a type, not
 a value. Unlike new, make's return type is the same as the type of its
 argument, not a pointer to it.
 ```
-[ref/spec#Making_slices_maps_and_channels](https://go.dev/ref/spec#Making_slices_maps_and_channels)
-[doc/effective_go#allocation_make](https://go.dev/doc/effective_go#allocation_make)
-[tour/moretypes/13](https://go.dev/tour/moretypes/13)
-[dave.cheney/go-has-both-make-and-new-functions-what-gives](https://dave.cheney.net/2014/08/17/go-has-both-make-and-new-functions-what-gives)
+- [ref/spec#Making_slices_maps_and_channels](https://go.dev/ref/spec#Making_slices_maps_and_channels)
+- [doc/effective_go#allocation_make](https://go.dev/doc/effective_go#allocation_make)
+- [tour/moretypes/13](https://go.dev/tour/moretypes/13)
+- [dave.cheney/go-has-both-make-and-new-functions-what-gives](https://dave.cheney.net/2014/08/17/go-has-both-make-and-new-functions-what-gives)
+```go
+package main
+
+func main() {
+	s := make([]int, 10) // slice with len(s) == cap(s) == 10
+	println(s)
+	println(s[0])
+}
+```
 
 ## Packages
 - [ref/spec#Packages](https://go.dev/ref/spec#Packages)
