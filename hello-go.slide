@@ -50,12 +50,6 @@
 .link https://www.youtube.com/watch?v=t9bEg2A4jsw
 .link https://www.youtube.com/watch?v=B64hIRjNvLc
 
-* Names
-.link https://golang.org/doc/effective_go.html#names
-.link https://talks.golang.org/2014/names.slide
-.link https://dave.cheney.net/2019/01/08/avoid-package-names-like-base-util-or-common
-.link https://www.youtube.com/watch?v=GXijarXgHHY
-
 * Internal Directories
 .link https://golang.org/cmd/go/#hdr-Internal_Directories
 

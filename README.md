@@ -7,6 +7,7 @@ My place to collect information about Go
   - [Built-in functions](#built-in-functions)
   - [Basic types](#basic-types)
   - [Zero values](#zero-values)
+  - [Names](#names)
   - [Constants](#constants)
   - [Variables](#variables)
   - [New and make](#new-and-make)
@@ -92,6 +93,25 @@ nil // for pointers, functions, interfaces, slices, channels, and maps
 - [ref/spec#The_zero_value](https://go.dev/ref/spec#The_zero_value)
 - [tour/basics/12](https://go.dev/tour/basics/12)
 - [dave.cheney/what-is-the-zero-value-and-why-is-it-useful](https://dave.cheney.net/2013/01/19/what-is-the-zero-value-and-why-is-it-useful)
+
+## Names
+1. "Avoid package names like base, common, or util"
+1. "A package's name should describe its purpose"
+1. "A variable's name should describe its content"
+1. "Use the smallest scope possible, declare variable close to their use"
+1. "Functions should be named for the result they return"
+1. "Methods should be named for the action they perform"
+1. "Methods mutate state, functions transform data"
+1. "The visibility of a name outside a package is determined by whether its first character is upper case"
+1. "Finally, the convention in Go is to use MixedCaps or mixedCaps rather than underscores to write multiword names"
+
+- [doc/effective_go#names](https://go.dev/doc/effective_go#names)
+- [blog/package-names](https://go.dev/blog/package-names)
+- [talks/names](https://talks.golang.org/2014/names.slide)
+- [dave.cheney/practical-go](https://dave.cheney.net/practical-go/presentations/qcon-china.html)
+- [dave.cheney/avoid-package-names-like-base-util-or-common](https://dave.cheney.net/2019/01/08/avoid-package-names-like-base-util-or-common)
+- [dave.cheney/you-shouldnt-name-your-variables-after-their-types-for-the-same-reason-you-wouldnt-name-your-pets-dog-or-cat](https://dave.cheney.net/2019/01/29/you-shouldnt-name-your-variables-after-their-types-for-the-same-reason-you-wouldnt-name-your-pets-dog-or-cat)
+- [youtube/What's in a name?, Dave Cheney](https://www.youtube.com/watch?v=GXijarXgHHY)
 
 ## Constants
 ```go
