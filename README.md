@@ -27,6 +27,7 @@ My place to collect information about Go
   - [Defer](#defer)
   - [Error handling](#error-handling)
   - [Panic and recover](#panic-and-recover)
+  - [Modules](#modules)
   - [Generics](#generics)
   - [Useful links](#useful-links)
 
@@ -533,6 +534,15 @@ func main() {
 - [ref/spec#Run_time_panics](https://go.dev/ref/spec#Run_time_panics)
 - [ref/spec#Type_assertions](https://go.dev/ref/spec#Type_assertions)
 - [medium/go-how-does-a-program-recover](https://medium.com/a-journey-with-go/go-how-does-a-program-recover-fbbbf27cc31e)
+
+## Modules
+```sh
+go mod init
+go mod tidy
+```
+- [ref/mod](https://go.dev/ref/mod)
+- [blog/using-go-modules](https://go.dev/blog/using-go-modules)
+- [blog/module-changes](https://go.dev/blog/go116-module-changes)
 
 ## Generics
 ```go
