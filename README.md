@@ -28,6 +28,7 @@ My place to collect information about Go
   - [Error handling](#error-handling)
   - [Panic and recover](#panic-and-recover)
   - [Generics](#generics)
+  - [Useful links](#useful-links)
 
 ## Main function
 ```go
@@ -561,3 +562,18 @@ func main() {
 - [How are generics implemented in Go?](https://go.dev/doc/faq#generics_implementation)
 - [How do generics in Go compare to generics in other languages?](https://go.dev/doc/faq#generics_comparison)
 - [Type Parameters Proposal](https://go.googlesource.com/proposal/+/master/design/43651-type-parameters.md)
+
+### Useful links
+- [Release dashboard](https://dev.golang.org/release)
+- [Release History](https://go.dev/doc/devel/release)
+- [The Go Playground](https://go.dev/play/)
+- [A tour of Go](https://go.dev/tour/list)
+- [Effective Go](https://go.dev/doc/effective_go)
+- [Frequently Asked Questions](https://go.dev/doc/faq)
+- [The Go Programming Language Specification](https://go.dev/ref/spec)
+- [Installing multiple Go versions](https://go.dev/doc/manage-install#installing-multiple)
+- [How to Write Go Code](https://go.dev/doc/code)
+- [Optional environment variables](https://go.dev/doc/install/source#environment)
+- [Go Code Review Comments](https://github.com/golang/go/wiki/CodeReviewComments)
+- [Standard library](https://pkg.go.dev/std)
+- [Go command](https://pkg.go.dev/cmd/go)
