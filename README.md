@@ -117,6 +117,7 @@ nil // for pointers, functions, interfaces, slices, channels, and maps
 - [dave.cheney/avoid-package-names-like-base-util-or-common](https://dave.cheney.net/2019/01/08/avoid-package-names-like-base-util-or-common)
 - [dave.cheney/you-shouldnt-name-your-variables-after-their-types-for-the-same-reason-you-wouldnt-name-your-pets-dog-or-cat](https://dave.cheney.net/2019/01/29/you-shouldnt-name-your-variables-after-their-types-for-the-same-reason-you-wouldnt-name-your-pets-dog-or-cat)
 - [yt/What's in a name?, Dave Cheney](https://www.youtube.com/watch?v=GXijarXgHHY)
+- [wiki/CodeReviewComments#initialisms](https://go.dev/wiki/CodeReviewComments#initialisms)
 
 ## Constants
 ```go
@@ -464,8 +465,8 @@ func TestArea(t *testing.T) {
 - [doc/faq#testing_framework](https://go.dev/doc/faq#testing_framework)
 - [doc/code#Testing](https://go.dev/doc/code#Testing)
 - [doc/faq#assertions](https://go.dev/doc/faq#assertions)
-- [github/go/wiki/TableDrivenTests](https://github.com/golang/go/wiki/TableDrivenTests)
-- [github/go/wiki/CommonMistakes#using-goroutines-on-loop-iterator-variables](https://github.com/golang/go/wiki/CommonMistakes#using-goroutines-on-loop-iterator-variables)
+- [wiki/TableDrivenTests](https://go.dev/wiki/TableDrivenTests)
+- [wiki/CommonMistakes#using-goroutines-on-loop-iterator-variables](https://go.dev/wiki/CommonMistakes#using-goroutines-on-loop-iterator-variables)
 - [dave.cheney/prefer-table-driven-tests](https://dave.cheney.net/2019/05/07/prefer-table-driven-tests)
 - [dave.cheney/test-fixtures-in-go](https://dave.cheney.net/2016/05/10/test-fixtures-in-go)
 
@@ -602,6 +603,6 @@ func main() {
 - [Installing multiple Go versions](https://go.dev/doc/manage-install#installing-multiple)
 - [How to Write Go Code](https://go.dev/doc/code)
 - [Optional environment variables](https://go.dev/doc/install/source#environment)
-- [Go Code Review Comments](https://github.com/golang/go/wiki/CodeReviewComments)
+- [Go Code Review Comments](https://go.dev/wiki/CodeReviewComments)
 - [Standard library](https://pkg.go.dev/std)
 - [Go command](https://pkg.go.dev/cmd/go)
