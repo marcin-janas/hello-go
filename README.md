@@ -1,4 +1,5 @@
 # Hello Go
+
 My place to collect information about Go
 
 - [Hello Go](#hello-go)
@@ -26,6 +27,7 @@ My place to collect information about Go
   - [Defer](#defer)
   - [Error handling](#error-handling)
   - [Panic and recover](#panic-and-recover)
+  - [Generics](#generics)
 
 ## Main function
 ```go
@@ -111,7 +113,7 @@ nil // for pointers, functions, interfaces, slices, channels, and maps
 - [dave.cheney/practical-go](https://dave.cheney.net/practical-go/presentations/qcon-china.html)
 - [dave.cheney/avoid-package-names-like-base-util-or-common](https://dave.cheney.net/2019/01/08/avoid-package-names-like-base-util-or-common)
 - [dave.cheney/you-shouldnt-name-your-variables-after-their-types-for-the-same-reason-you-wouldnt-name-your-pets-dog-or-cat](https://dave.cheney.net/2019/01/29/you-shouldnt-name-your-variables-after-their-types-for-the-same-reason-you-wouldnt-name-your-pets-dog-or-cat)
-- [youtube/What's in a name?, Dave Cheney](https://www.youtube.com/watch?v=GXijarXgHHY)
+- [yt/What's in a name?, Dave Cheney](https://www.youtube.com/watch?v=GXijarXgHHY)
 
 ## Constants
 ```go
@@ -464,7 +466,7 @@ func TestArea(t *testing.T) {
 - [dave.cheney/prefer-table-driven-tests](https://dave.cheney.net/2019/05/07/prefer-table-driven-tests)
 - [dave.cheney/test-fixtures-in-go](https://dave.cheney.net/2016/05/10/test-fixtures-in-go)
 
-"Files whose names begin with "_" (including "_test.go") or "." are ignored."
+"Files whose names begin with `_` (including `_test.go`) or `.` are ignored."
 - [pkg/cmd/go#hdr-Test_packages](https://pkg.go.dev/cmd/go#hdr-Test_packages)
 
 ## Defer
@@ -531,3 +533,31 @@ func main() {
 - [ref/spec#Type_assertions](https://go.dev/ref/spec#Type_assertions)
 - [medium/go-how-does-a-program-recover](https://medium.com/a-journey-with-go/go-how-does-a-program-recover-fbbbf27cc31e)
 
+## Generics
+```go
+package main
+
+func add[T int | string](s []T) T {
+	var r T
+
+	for _, v := range s {
+		r += v
+	}
+
+	return r
+}
+
+func main() {
+	i := []int{1, 2, 3}
+	s := []string{"One", "Two", "Three"}
+	println(add(i))
+	println(add(s))
+}
+```
+- [An Introduction To Generics](https://go.dev/blog/intro-generics)
+- [Tutorial: Getting started with generics](https://go.dev/doc/tutorial/generics)
+- [When did Go get generic types?](https://go.dev/doc/faq#generics)
+- [Why was Go initially released without generic types?](https://go.dev/doc/faq#beginning_generics)
+- [How are generics implemented in Go?](https://go.dev/doc/faq#generics_implementation)
+- [How do generics in Go compare to generics in other languages?](https://go.dev/doc/faq#generics_comparison)
+- [Type Parameters Proposal](https://go.googlesource.com/proposal/+/master/design/43651-type-parameters.md)
