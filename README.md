@@ -28,6 +28,7 @@ My place to collect information about Go
   - [Error handling](#error-handling)
   - [Panic and recover](#panic-and-recover)
   - [Modules](#modules)
+  - [Channels](#channels)
   - [Generics](#generics)
   - [Useful links](#useful-links)
 
@@ -543,6 +544,23 @@ go mod tidy
 - [ref/mod](https://go.dev/ref/mod)
 - [blog/using-go-modules](https://go.dev/blog/using-go-modules)
 - [blog/module-changes](https://go.dev/blog/go116-module-changes)
+
+## Channels
+```go
+package main
+
+func main() {
+	ch := make(chan string)
+	go func(chan string) {
+		ch <- "Hello, Go!" // write to channel
+	}(ch)
+	println(<-ch) // read from channel
+}
+```
+- [ref/spec#Channel_types](https://go.dev/ref/spec#Channel_types)
+- [ref/spec#Making_slices_maps_and_channels](https://go.dev/ref/spec#Making_slices_maps_and_channels)
+- [doc/effective_go#channels)](https://go.dev/doc/effective_go#channels)
+- [doc/effective_go#chan_of_chan](https://go.dev/doc/effective_go#chan_of_chan)
 
 ## Generics
 ```go
