@@ -112,7 +112,7 @@ nil // for pointers, functions, interfaces, slices, channels, and maps
 
 - [doc/effective_go#names](https://go.dev/doc/effective_go#names)
 - [blog/package-names](https://go.dev/blog/package-names)
-- [talks/names](https://talks.golang.org/2014/names.slide)
+- [talks/names](https://go.dev/talks/2014/names.slide)
 - [dave.cheney/practical-go](https://dave.cheney.net/practical-go/presentations/qcon-china.html)
 - [dave.cheney/avoid-package-names-like-base-util-or-common](https://dave.cheney.net/2019/01/08/avoid-package-names-like-base-util-or-common)
 - [dave.cheney/you-shouldnt-name-your-variables-after-their-types-for-the-same-reason-you-wouldnt-name-your-pets-dog-or-cat](https://dave.cheney.net/2019/01/29/you-shouldnt-name-your-variables-after-their-types-for-the-same-reason-you-wouldnt-name-your-pets-dog-or-cat)
