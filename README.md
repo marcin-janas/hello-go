@@ -415,9 +415,9 @@ func main() {
 	fmt.Println(r.area())
 }
 ```
-- [ref/spec#](https://go.dev/ref/spec#Method_declarations)
-- [ref/spec#](https://go.dev/ref/spec#Method_expressions)
-- [ref/spec#](https://go.dev/ref/spec#Method_values)
+- [ref/spec#Method_declarations](https://go.dev/ref/spec#Method_declarations)
+- [ref/spec#Method_expressions](https://go.dev/ref/spec#Method_expressions)
+- [ref/spec#Method_values](https://go.dev/ref/spec#Method_values)
 - [tour/methods/1](https://go.dev/tour/methods/1)
 - [tour/methods/2](https://go.dev/tour/methods/2)
 - [tour/methods/3](https://go.dev/tour/methods/3)
